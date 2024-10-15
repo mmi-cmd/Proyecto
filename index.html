@@ -1,16 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres del documento como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Permite compatibilidad con versiones antiguas de Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsive, es decir, que se adapte a diferentes tamaños de pantalla -->
+    
+    <!-- Título de la página -->
+    <title>Michus Crochet</title> 
+    
+    <!-- Incluir archivo CSS con los estilos personalizados -->
     <link rel="stylesheet" href="css/estilos.css">
+    
+    <!-- Incluir biblioteca Font Awesome para usar íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="body"> 
+<body>
+    <!-- Inicio del encabezado de la página -->
+    <header>
+        <!-- Contenedor del header con estilo de fondo -->
+        <div class="container_header" style="background-color: rgba(228, 218, 224, 0.507);">
+            
+            <!-- Menú de navegación y logo -->
+            <div class="menu"> 
+                <nav> <!-- Inicio de la sección de navegación -->
+                    <ul> <!-- Lista no ordenada para los elementos de navegación -->
+                        
+                        <!-- Logo de la página -->
+                        <li>
+                            <div class="logo">
+                                <!-- Enlace al logo de la página -->
+                                <a href="#">
+                                    <!-- Imagen del logo -->
+                                    <img src="img/logo/logo.png" alt="No se encuentra el enlace de la imagen">
+                                </a>
+                            </div>
+                        </li>
+                        
+                        <!-- Enlaces del menú de navegación -->
+                        <li><a href="#">Home</a></li> <!-- Enlace a la página principal -->
+                        <li><a href="#">About</a></li> <!-- Enlace a la sección "Acerca de" -->
+                        <li><a href="#">Services</a></li> <!-- Enlace a la sección de servicios -->
+                        <li><a href="#">Plans</a></li> <!-- Enlace a la sección de planes -->
+                        <li><a href="#">Contact</a></li> <!-- Enlace a la sección de contacto -->
 
-    <h1>Bienvenidos estudiantes a la asignatura del desarrollo web</h1>
+                        <!-- Botón para solicitar una cotización -->
+                        <div class="btn_quote">
+                            <a href="#">Quote</a> <!-- Enlace al formulario o sección de cotización -->
+                        </div>
+                        
+                        <!-- Sección de redes sociales -->
+                        <div class="socialMedia">
+                            <!-- Enlace a la página de Facebook -->
+                            <a href="#" target="_blank">
+                                <!-- Icono de Facebook -->
+                                <img src="img/socialMedia/facebook.png" alt="No se encontró la imagen">
+                            </a>
 
+                            <!-- Enlace a la página de Instagram -->
+                            <a href="#" target="_blank">
+                                <!-- Icono de Instagram -->
+                                <img src="img/socialMedia/instagram.png" alt="No se encontró la imagen">
+                            </a>
 
+                            <!-- Enlace a WhatsApp -->
+                            <a href="#" target="_blank">
+                                <!-- Icono de WhatsApp -->
+                                <img src="img/socialMedia/whatsapp.png" alt="No se encontró la imagen">
+                            </a>
+
+                            <!-- Enlace a X (anteriormente Twitter) -->
+                            <a href="#" target="_blank">
+                                <!-- Icono de X (Twitter) -->
+                                <img src="img/socialMedia/x.png" alt="No se encontró la imagen">
+                            </a>
+                        </div>
+                    </ul> <!-- Fin de la lista de navegación -->
+                </nav> <!-- Fin de la sección de navegación -->
+            </div>
+        </div> <!-- Fin del contenedor del header -->
+    </header> <!-- Fin del encabezado -->
+
+    <!--main-->
+    <main>
+        <!--Inicio-->
+        <!--Portada de inicio-->
+        <!--Inicio-->
+        <!--Portada Inicio-->
+        <div class="container_cover div_offset" style="background-color: rgba(228, 218, 224, 0.507)"">
+            <div class="cover">
+                <section class="text__cover">
+                    <h1>Michu's Crochet</h1>
+                    <p>Descubre el encanto de los amigurumis personalizados con Michu's Crochet y deja que nuestras creaciones te acompañen en tus momentos más especiales.</p>
+                    <a href="#" class="btn_text-cover btn_text">Empezar</a>
+                </section>
+                <section class="image__cover">
+                    <img src="img/cover/cover2.png" alt="">
+                </section>
+            </div>
+        </div>
+	
+        <!--End Portada inicio-->
+
+        <!--Generador de confianza-->
+        <div class="container_trust container_card-primary">
+            <div class="trust card__primary">
+                <div class="text_trust text_card-primary">
+                    <p>Hecho con amor, solo para ti</p>
+                    <h1>Dale vida a tus sueños con cada puntada</h1>
+                </div>
+                <div class="container_trust container_box-cardPrimary">
+                    <div class="card_trust box_card-primary">
+                        <img src="img/cards/exclusive.png">
+                        <h2>Personalización Exclusiva</h2>
+                        <p>Amigurumis hechos a medida según las preferencias del cliente.</p>
+                    </div>
+                    <div class="card_trust box_card-primary">
+                        <img src="img/cards/calidad.png" alt="">
+                        <h2>Calidad Artesanal</h2>
+                        <p>Uso de materiales y técnicas de alta calidad para creaciones duraderas.</p>
+                    </div>
+                    <div class="card_trust box_card-primary">
+                        <img src="img/cards/servicio_cliente.png" alt="">
+                        <h2>Servicio al Cliente Cercano</h2>
+                        <p>Atención cercana y adaptada a las necesidades individuales de cada cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Sobre nosotros-->
+        <div class="container_about div _offset" style="background-color: rgba(228, 218, 224, 0.507)">
+            <div class="about">
+                <div class="text_about">
+                    <h1>"Tejiendo Pasiones: Nuestra historia en el mundo del crochet"</h1>
+                    <p>Para nosotros, el crochet es una forma de expresión y conexión. Nuestra misión es compartir la belleza y la calidez que el crochet puede aportar a la vida diaria. Cada proyecto cuenta una historia y refleja nuestra pasión por la creatividad.</p>
+                    <a href="#" class="btn_text">Saber Más</a>
+                </div>
+                <div class="image_about">
+                    <img src="img/about/about1.jpg" alt="img no encontrada">
+                    <img src="img/about/about2.jpg" alt="img no encontrada">
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--End Sobre nosotros-->
+        <div class="container_service">
+            <div class="service">
+                <div class="text_service">
+                    <p>QUE HACEMOS</p>
+                    <h1>Ofrecemos servicios a tu medida </h1>
+                </div>
+                <div class="container_box_service">
+                    <div class="box_service">
+                        <img src="img/service/service1.png">
+                        <h2>Creación de Amigurumis a Pedido</h2>
+                        <p>Ofrecemos la opción de crear amigurumis personalizados según las preferencias del cliente</p>
+                    </div>
+                    <div class="box_service">
+                        <img src="img/service/service2.png">
+                        <h2>Colecciones Temáticas</h2>
+                        <p>Lanzamos colecciones especiales de amigurumis en torno a temas especiales</p>
+                    </div>
+                    <div class="box_service">
+                        <img src="img/service/service3.png">
+                        <h2>Personalización de Regalos</h2>
+                        <p>Ofrecemos un servicio de personalización para regalos, perfectos para celebraciones.</p>
+                    </div>
+                    <div class="box_service">
+                        <img src="img/service/service4.png">
+                        <h2>Accesorios y Complementos</h2>
+                        <p>Creamos accesorios para amigurumis, como ropa u objetos</p>
+                    </div>
+                    <div class="box_service">
+                        <img src="img/service/service5.png">
+                        <h2>Consultas Personalizadas</h2>
+                        <p>Ofrecemos sesiones de consulta para ayudar a los clientes en el proceso de diseño</p>
+                    </div>
+                    <div class="box_service">
+                        <img src="img/service/service6.png">
+                        <h2>Amigurumis Educativos</h2>
+                        <p>Creamos amigurumis que representan conceptos educativos, diseñados para aprender de manera divertida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end sobre nosotros -->
+
+        <!-- projects -->
+
+        <div class="container_projects">
+            <div class="projects">
+                <div class="text_projects">
+                    <p>NUESTROS PROYECTOS</p>
+                    <h1>Comprueba nuestro trabajo, visualizando nuestros proyectos </h1>
+                </div>
+                <div class="container_box_projects">
+
+                    <div class="box_projects">
+                        <div>
+                            <a href="#" class="imagen-con-texto">
+                                <img src="img/projects/projects1.jfif" class="img_projects">
+                                <span class="texto-en-imagen">Conoce nuestras colecciones Temáticas </span>
+                            </a> 
+                        </div>
+                    </div>
+
+                    <div class="box_projects">
+                        <a href="#" class="imagen-con-texto">
+                            <img src="img/projects/projects2.jfif" class="img_projects">
+                            <span class="texto-en-imagen">Conoce nuestras colecciones de llaveros</span>
+                        </a>
+                    </div>
+
+                    <div class="box_projects">
+                        <a href="#" class="imagen-con-texto">
+                            <img src="img/projects/projects3.jfif" class="img_projects">
+                            <span class="texto-en-imagen">Conoce nuestras colecciones para bebés</span>
+                        </a>
+                    </div>
+
+                    <div class="box_projects">
+                        <a href="#" class="imagen-con-texto">
+                            <img src="img/projects/projects4 (2).jfif" class="img_projects">
+                            <span class="texto-en-imagen">Conoce nuestras colecciones de animales</span>
+                        </a>
+                        
+                    </div>
+                    <div class="box_projects">
+                        <a href="#" class="imagen-con-texto" >
+                            <img src="img/projects/projects5.jfif" class="img_projects">
+                            <span class="texto-en-imagen">Conoce nuestras colecciones de peluches</span>
+                        </a>
+                        
+                    </div>
+                    <div class="box_projects">
+                        <a href="#" class="imagen-con-texto">
+                            <img src="img/projects/projects6.jfif" class="img_projects">
+                            <span class="texto-en-imagen">Conoce nuestras colecciones florales</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Equipo -->
+        <div class="container_team">
+            <div class="team">
+                <div class="text_team">
+                    <p>CONOZCA A NUESTRO EQUIPO</p>
+                    <h1>Gente increíble con gran experiencia
+                    </h1>
+                </div>
+                <div class="container_box_team">
+                    <div class="box_team">
+                        <img src="img/team/team1.jfif">
+                        <h2>Michell Pérez Gómez</h2>
+                        <p>Tejedora</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end equipos -->
+    
+        <!-- form -->
+
+        <div class="container_cover div_offset" style="background-color: rgba(228, 218, 224, 0.507)"">
+            <div class="cover">
+                <section class="text__cover">
+                    <div class="contact-form">
+						<h2>CONTÁCTANOS</h2>
+						<form action="#" method="post">
+							<form action="#" method="post"></form>
+        
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="name" placeholder="Por ejemplo, María" required>
+        
+                            <label for="email">Correo electrónico</label>
+                            <input class="form_email" type="email" placeholder="porejemplo@email.com" required>
+        
+                            <label for="number">Celular</label>
+                            <input class="form_number" type="number" placeholder="3000000000" required>
+        
+                            <label for="PQRS" class="PQRS">Seleccione la PQRS deseada</label>
+                            <select name="PQRS" id="PQRS"> Seleccione PQRS:
+                                <option value="P">Petición</option>
+                                <option value="Q">Queja</option>
+                                <option value="R">Reclamo</option>
+                                <option value="S">Sugerencia</option>
+                            </select>
+        
+                            <label for="message" class="message">Mensaje</label>
+                            <textarea id="massage" name="message" rows="15" required placeholder="Escribe tus dudas, quejas o sugerencias"></textarea>
+        
+                            <button type="submit"> Enviar </button>
+						</form>
+					</div>
+                </section>
+                <section class="image__cover">
+                    <img src="img/cover/cover2.png" alt="">
+                </section>
+            </div>
+        </div>
+
+        <!-- End form -->
+
+        <!-- mapa -->
+        <div class="map-container">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1974.2738252731629!2d-73.36271701145745!3d8.24815668736235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x8e677be03c2a6bf3%3A0x2c74b4dc64973557!2sVelas%20y%20Velones%20F%C3%A1tima!3m2!1d8.2474634!2d-73.3613506!4m3!3m2!1d8.2477351!2d-73.3613987!5e0!3m2!1ses!2sco!4v1728412863863!5m2!1ses!2sco" 
+            width="100%" 
+            height="500" 
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+            >
+        </iframe>
+            
+        </div>
+    </main>
 </body>
+
 </html>
