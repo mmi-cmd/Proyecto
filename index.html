@@ -38,11 +38,11 @@
                         </li>
                         
                         <!-- Enlaces del menú de navegación -->
-                        <li><a href="#">Home</a></li> <!-- Enlace a la página principal -->
-                        <li><a href="#">About</a></li> <!-- Enlace a la sección "Acerca de" -->
-                        <li><a href="#">Services</a></li> <!-- Enlace a la sección de servicios -->
-                        <li><a href="#">Plans</a></li> <!-- Enlace a la sección de planes -->
-                        <li><a href="#">Contact</a></li> <!-- Enlace a la sección de contacto -->
+                        <li><a href="index.html">Home</a></li> <!-- Enlace a la página principal -->
+                        <li><a href="#about">About</a></li> <!-- Enlace a la sección "Acerca de" -->
+                        <li><a href="#service">Services</a></li> <!-- Enlace a la sección de servicios -->
+                        <li><a href="#plans">Plans</a></li> <!-- Enlace a la sección de planes -->
+                        <li><a href="#contact">Contact</a></li> <!-- Enlace a la sección de contacto -->
 
                         <!-- Botón para solicitar una cotización -->
                         <div class="btn_quote">
@@ -129,7 +129,7 @@
             </div>
         </div>
         <!--Sobre nosotros-->
-        <div class="container_about div _offset" style="background-color: rgba(228, 218, 224, 0.507)">
+        <div class="container_about div _offset" style="background-color: rgba(228, 218, 224, 0.507)" id="about">
             <div class="about">
                 <div class="text_about">
                     <h1>"Tejiendo Pasiones: Nuestra historia en el mundo del crochet"</h1>
@@ -144,7 +144,7 @@
             </div>
         </div>
         <!--End Sobre nosotros-->
-        <div class="container_service">
+        <div class="container_service" id="service">
             <div class="service">
                 <div class="text_service">
                     <p>QUE HACEMOS</p>
@@ -188,7 +188,7 @@
 
         <!-- projects -->
 
-        <div class="container_projects">
+        <div class="container_projects" id="plans">
             <div class="projects">
                 <div class="text_projects">
                     <p>NUESTROS PROYECTOS</p>
@@ -243,7 +243,7 @@
         </div>
 
         <!-- Equipo -->
-        <div class="container_team">
+        <div class="container_team" id="contact">
             <div class="team">
                 <div class="text_team">
                     <p>CONOZCA A NUESTRO EQUIPO</p>
@@ -318,7 +318,71 @@
         </iframe>
             
         </div>
+
+        <!-- agregar video -->
+
+        <div class="media-conatiner">
+            <h2>Reproductor de video</h2>
+            <div class="video_section"> <!-- video de manera local -->
+                
+                <video src="media/video_ejemplo.mp4" class="video" type="video/mp4" controls > </video> <!-- video de manera local -->
+            </div>
+
+            <div class="video_section" >
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/Ilw9C6fstZ0?si=FhsoSuWibgCZLPrI" class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+
+        </div>
+        <!-- end video -->
+
+        <div class="table-container"> 
+            <h2>Listado de usuarios</h2>
+             <input type="text" placeholder="Buscar...">
+
+             <!-- tabla con paginacion -->
+              <table id="userTable">
+                <thead> <!-- encabezado de tabla -->
+                    <tr class="filas">
+                        <th>ID</th> <!-- filas -->
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Rol</th>
+                    </tr>
+                    <tbody> <!-- cuerpor de la tabla -->
+                        <tr class="columnas">
+                            <td>1</td> <!-- rellerno de datos, columnas -->
+                            <td>María</td>
+                            <td>maria@gmail.com</td>
+                            <td>Admin</td>
+                        </tr>
+
+                        <tr class="columnas">
+                            <td>2</td>
+                            <td>Juan</td>
+                            <td>juan@gmail.com</td>
+                            <td>Admin</td>
+                        </tr>
+
+                        <tr class="columnas">
+                            <td>3</td>
+                            <td>Carlos</td>
+                            <td>carlos@gmail.com</td>
+                            <td>Admin</td>
+                        </tr>
+
+                        <tr class="columnas">
+                            <td>4</td>
+                            <td>Lucas</td>
+                            <td>lucas@gmail.com</td>
+                            <td>Admin</td>
+                        </tr>
+                    </tbody>
+                </thead>
+              </table>
+        </div>
     </main>
 </body>
 
 </html>
+

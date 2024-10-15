@@ -635,3 +635,41 @@ header {
     border-radius: 20px;
 }
 
+/* video */
+.media-conatiner{
+    margin: 30px;
+    
+}
+
+.media-conatiner h2{
+    text-align: center;
+    font-size: 28px;
+    color: var(--color_text-secundario);
+    margin: 20px;
+}
+
+.video{
+    border-radius: 20px;
+}
+.video_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+/* tabla */
+.table-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: auto;
+}
+
+.table-container h2{
+    text-align: center;
+    font-size: 28px;
+    color: var(--color_text-secundario);
+    margin: 20px;
+}
