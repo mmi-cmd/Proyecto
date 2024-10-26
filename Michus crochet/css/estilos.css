@@ -10,6 +10,11 @@
     font-family: 'Poppins', sans-serif; /* Usa la fuente Poppins para todo el documento */
 }
 
+main {
+    margin: 0;
+    padding: 0;
+}
+
 /* Variables CSS para colores globales */
 :root {
     --color_text-primary: #BF967E; /* Color primario para textos y elementos */
@@ -19,135 +24,172 @@
     --color_text-font: #0D0D0D; /* Color de fuente principal (negro) */
 }
 
-/* Estilos para el header */
+/* Header */
+
 header {
-    width: 100%; /* El header ocupa todo el ancho de la pantalla */
-    position: fixed; /* Se mantiene fijo en la parte superior al hacer scroll */
-    z-index: 100; /* Asegura que el header esté por encima de otros elementos */
-    padding: 5px 0; /* Reduce el espacio interior del header */
-    top: 0; /* Asegura que el header esté en la parte superior */
+    /* El header ocupa el 100% del ancho */
+    width: 100%;
+
+    /* Define la altura del header en 100px */
+    height: 90px;
+
+    /* Hace que el header permanezca fijo mientras se hace scroll */
+    position: fixed;
+
+    /* Controla el apilamiento del header para que esté por encima de otros elementos */
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; 
+    margin: 0; 
+    background-color: rgba(228, 218, 224, 0.507);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenedor principal del header */
 .container_header {
-    max-width: 100%; /* El ancho máximo es del 100% */
-    height: 100%; /* La altura ocupa el 100% del contenedor */
-    margin: auto; /* Centra el contenedor */
-    display: flex; /* Flexbox para alinear los elementos */
-    justify-content: space-between; /* Espacia los elementos a los lados del contenedor */
-    align-items: center; /* Alinea verticalmente al centro */
-    padding: 5px 10px; /* Ajusta el padding del contenedor */
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Listas dentro del header */
-.container_header ul {
-    display: flex; /* Distribuye los elementos de la lista en fila */
-}
-
-/* Cada elemento de la lista del header */
-.container_header ul li {
-    display: inline-block; /* Alinea los elementos en línea */
-}
-
-/* Logo del sitio web */
 .logo {
-    display: flex; /* Flexbox para alinear contenido */
-    align-items: center; /* Alineación vertical del logo */
-    z-index: 1; /* Asegura que el logo esté por encima de otros elementos */
-    margin-top: -20px; /* Ajusta la posición del logo hacia arriba */
+    /* Usa flexbox para alinear los elementos hijos del logo */
+    display: flex;
+
+    /* Alinea verticalmente el contenido del logo */
+    align-items: center;
+
+    /* Posiciona el logo en un nivel superior, en caso de superposición */
+    position: relative;
+    z-index: 1;
 }
 
-/* Imagen del logo */
 .logo img {
     width: 70px; /* Ancho del logo */
     height: 70px; /* Altura del logo */
-    margin: auto;
 }
 
-/* Menú de navegación */
 .menu {
-    display: flex; /* Flexbox para alinear elementos del menú */
-    align-items: center; /* Alinea verticalmente al centro */
-    background-color: transparent; /* Fondo transparente para el menú */
-    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
-    position: sticky; /* Se mantiene fijo en la parte superior al hacer scroll */
-    top: 0; /* Se mantiene en la parte superior */
-    width: 100%; /* Ancho completo */
-    margin: 0; /* Sin margen */
-    z-index: 1000; /* Coloca el menú por encima de otros elementos */
-    padding: 2px 0; /* Reduce el padding para hacer el menú más compacto */
-    box-shadow: 5px 5px 10px rgba(202, 195, 195, 0.5); /* Sombra suave para darle efecto de elevación */
+    /* Usa flexbox para alinear los elementos del menú */
+    display: flex;
+    justify-content: center;
+
+    /* Alinea verticalmente los elementos dentro del menú */
+    align-items: center;
+
+    /* Fondo transparente por defecto para el menú */
+    background-color: transparent;
+
+    /* Aplica una transición suave al cambiar el color de fondo */
+    transition: background-color 0.3s ease;
+
+    /* Hace que el menú se quede fijo en la parte superior cuando se hace scroll */
+    position: sticky;
+
+    /* Fija la posición del menú en la parte superior de la pantalla */
+    top: 0;
+
+    /* Asegura que el menú ocupe el ancho completo de la pantalla */
+    width: 100%;
+
+    /* Asegura que el menú esté en la parte superior de otros elementos */
+    z-index: 1000;
+    margin: 0;
 }
 
-/* Navegación dentro del menú */
 .menu nav {
-    list-style: none; /* Elimina los puntos de las listas */
-    margin: 0 16px; /* Margen alrededor del menú */
+    /* Añade un margen de 20px a los lados del menú de navegación */
+    margin: 0px 20px;
+    justify-content: center; /* Centra el contenido de navegación */
+    align-items: center;
 }
 
-/* Lista de navegación */
 .menu nav ul {
-    display: flex; /* Flexbox para distribuir los elementos en fila */
-    gap: 20px; /* Espaciado entre los elementos */
+    /* Usa flexbox para alinear los elementos de la lista horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Elementos individuales del menú */
 .menu nav ul li {
-    list-style: none; /* Sin viñetas */
-    margin: 10px 16px; /* Margen para separar los elementos */
+    /* Elimina los puntos de lista predeterminados */
+    list-style: none;
+
+    /* Añade un margen de 20px arriba y abajo, y 16px a los lados */
+    margin: 20px 16px;
 }
 
-/* Estilo de los enlaces del menú */
 .menu nav ul li a {
-    color: black; /* Color negro para el texto de los enlaces */
-    font-size: 16px; /* Tamaño de fuente de los enlaces */
-    position: relative; /* Posiciona el enlace en relación a su posición original */
-    top: 15px; /* Mueve el enlace hacia abajo */
-    left: 180px /* Mueve el enlace hacia la derecha */
+    /* Aplica el color de texto secundario a los enlaces del menú */
+    color: var(--color_text-secundary);
+
+    /* Usa el tamaño de texto pequeño definido en las variables */
+    font-size: var(--lowText_font_size);
+
+    /* Define que el enlace esté en posición relativa */
+    position: relative;
 }
 
-/* Efecto hover en los enlaces del menú */
 .menu nav ul li a:hover {
-    color: var(--color_text-primary); /* Cambia el color al primario cuando se pasa el ratón por encima */
+    /* Cambia el color del enlace al primario cuando se pasa el ratón sobre él */
+    color: var(--color_text-primary);
 }
 
-/* Botón de cotización */
-.btn_quote a {
-    display: block; /* El botón se comporta como un bloque */
-    padding: 8px 12px; /* Espaciado dentro del botón */
-    border: 1px solid var(--color_text-secundario); /* Borde con color secundario */
-    border-radius: 6px; /* Bordes redondeados */
-    font-weight: 500; /* Grosor de la fuente */
-    transition: all 300ms; /* Transición suave para todos los cambios */
-    color: black; /* Color negro del texto */
-    margin-top: 15px; /* Espacio superior para alinear el botón */
-    margin-left:260px; /* Desplazamiento a la izquierda para responsividad */
-    margin-right: 150px; /* Desplazamiento a la derecha */
+.btn_quote {
+    /* Hace que el botón se muestre como un bloque */
+    display: block;
+
+    /* Define el relleno del botón: 8px arriba/abajo, 40px a los lados */
+    padding: 8px 40px;
+
+    /* Añade un borde sólido de 2px del color de texto primario */
+    border: 1px solid var(--color_text-primary);
+
+    /* Aplica bordes redondeados de 8px al botón */
+    border-radius: 6px;
+
+    /* Hace el texto más grueso */
+    font-weight: 500;
+
+    /* Aplica el color de texto terciario al texto del botón */
+    color: var(--color_text-tertiary);
+
+    /* Añade un margen lateral de 20px */
+    margin: 0px 20px;
+
+    /* Aplica una transición suave de 300ms a todas las propiedades */
+    transition: all 300ms;
 }
 
-/* Efecto hover en el botón de cotización */
-.btn_quote a:hover {
-    background-color: var(--color_text-primary); /* Cambia el fondo al color primario */
-    color: white; /* El texto se vuelve blanco */
+.btn_quote:hover {
+    /* Cambia el color del texto a blanco cuando se pasa el ratón */
+    color: white;
+
+    /* Cambia el fondo del botón al color primario */
+    background: var(--color_text-primary);
 }
 
-/* Redes sociales */
-.socialMedia {
-    display: flex; /* Flexbox para alinear iconos en fila */
-    align-items: center; /* Alineación vertical de los iconos */
-    position: relative; /* Posiciona las redes sociales de manera absoluta */
-    z-index: 1; /* Coloca los iconos sobre otros elementos */
-    top: 4px; /* Desplaza las redes sociales hacia arriba */
-    margin-right: 100px;
+.menu .socialMedia {
+    /* Añade un margen de 10px a los lados del área de redes sociales */
+    margin: 0px 10px;
 }
 
-/* Estilo de los iconos de redes sociales */
-.socialMedia img {
-    width: 35px; /* Ancho de los iconos */
-    height: 35px; /* Altura de los iconos */
-    padding: 5px; /* Espacio alrededor de los iconos */
-    margin-left: 10px; /* Espaciado entre los iconos */
+.menu .socialMedia a {
+    /* Añade un margen de 4px entre los iconos de redes sociales */
+    margin: 0px 4px;
 }
+
+.menu .socialMedia img {
+    width: 25px; /* Ancho de los iconos */
+    height: 25px; /* Altura de los iconos */
+}
+
+/* /End Header/ */
 
 /*Estilo del banner de entrada*/
 
@@ -353,18 +395,25 @@ header {
 
 .text_about{
     width: 100%;
-    padding-right: 150px;
+    padding-right: 100px;
+    margin-left: 30px;
 }
 
 .about img{
     margin-top: 230px;
-    width: 300px ;
-    height: 200px;
+    width: 320px ;
+    height: 220px;
     display: flex;
     margin-left: 50px;
     border-radius: 10px;
-    
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    transition: all 300ms;
 }
+
+.about img:hover{
+    transform: scale(1.05);
+}
+
 .image_about{
     display: flex;
     
@@ -571,10 +620,16 @@ header {
 
 .imagen-con-texto :hover{
     background-color: #ebdfd985;
+    transition: all 300ms;
 }
 .imagen-con-texto img {
     width: 100%; /* Ajusta el tamaño de la imagen, puedes modificarlo según tus necesidades */
     height: auto;
+}
+
+.imagen-con-texto img:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
 }
 
 .texto-en-imagen {
@@ -622,54 +677,132 @@ header {
 }
 
 .container_box_team{
-    display: flex; /* cambia la disposición de los hijos del contenedor, que ahora se organizarán en fila (por defecto) o en columna */
-    flex-wrap: wrap; /* Permite que los elementos secundarios se muevan a una nueva línea si no hay suficiente espacio en una sola fila. */
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las cajas de equipo en el contenedor */
+    gap: 50px; /* Espaciado entre cada caja de equipo */
     margin-top: 40px;
+    text-align: center;
+}
+
+.box_team {
+    width: 300px; /* Ajusta el ancho de cada caja de equipo */
     text-align: center;
 }
 
 .container_box_team img{
     height: 350px;
-    width: auto;
+    width: 100%; /* Ajusta la imagen al ancho de la caja */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
     border-radius: 20px;
 }
 
-/* video */
-.media-conatiner{
-    margin: 30px;
-    
+/* mapa */
+
+.map-container {
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.media-conatiner h2{
+.mapa {
+    width: 100%;
+    height: 100vh; /* Asegura que el iframe ocupe toda la pantalla */
+    border: 0; /* Elimina el borde del mapa */
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    background-color: var(--color_text-background);
+}
+
+.footer .box_footer-primary{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    justify-items: center;
+}
+.box{
     text-align: center;
-    font-size: 28px;
-    color: var(--color_text-secundario);
-    margin: 20px;
+}
+.footer .box{
+    margin: 0;
+    width: 100%;
+}
+.footer .box_footer-primary p{
+    font-size: 14px;
 }
 
-.video{
-    border-radius: 20px;
+.footer .box_footer-primary .socialMediaFooter ul a{
+    display: inline-block;
 }
-.video_section{
+
+.nav ul{
+    list-style-type: none;
+    padding: 0;
+    gap: 15px;
+}
+
+.nav ul a{
+    color: #0D0D0D;
+    font-weight:500;
+    transition: all 300ms ease;
+}
+
+.nav ul a:hover{
+    color: #A6826D;
+}
+
+.contactos{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactos a{
+    display: flex;
     align-items: center;
-    margin: 30px;
-    border-radius: 20px;
 }
 
-/* tabla */
-.table-container{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: white;
-    padding: auto;
+.contactos img{
+    margin-right: 10px;
+    transition: all 300ms ease;
 }
 
-.table-container h2{
+.contactos img:hover{
+    transform: scale(1.2);
+}
+.contactos a p{
+    color: #0D0D0D;
+}
+
+.socialMediaFooter a {
+    display: block; 
+    margin-bottom: 10px; 
+    margin-right: 10px;
+}
+
+.socialMediaFooter img {
+    width: 24px; 
+    height: auto;
+    margin-right: 10px;
+    transition: all 300ms ease;
+}
+
+.socialMediaFooter img:hover{
+    transform: scale(1.2);
+}
+
+.footer .box_footer-secundary{
+    background-color: #bba090;
     text-align: center;
-    font-size: 28px;
-    color: var(--color_text-secundario);
-    margin: 20px;
+    padding: 15px 10px;
+    color: rgb(255, 255, 255, 0.9);
 }

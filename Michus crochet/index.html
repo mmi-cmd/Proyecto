@@ -8,78 +8,66 @@
     
     <!-- Título de la página -->
     <title>Michus Crochet</title> 
-    
+    <link rel="icon" type="image/png" href="img/logo/logo.png">
     <!-- Incluir archivo CSS con los estilos personalizados -->
     <link rel="stylesheet" href="css/estilos.css">
     
     <!-- Incluir biblioteca Font Awesome para usar íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Inicio del encabezado de la página -->
-    <header>
-        <!-- Contenedor del header con estilo de fondo -->
-        <div class="container_header" style="background-color: rgba(228, 218, 224, 0.507);">
-            
-            <!-- Menú de navegación y logo -->
-            <div class="menu"> 
-                <nav> <!-- Inicio de la sección de navegación -->
-                    <ul> <!-- Lista no ordenada para los elementos de navegación -->
-                        
-                        <!-- Logo de la página -->
-                        <li>
-                            <div class="logo">
-                                <!-- Enlace al logo de la página -->
-                                <a href="#">
-                                    <!-- Imagen del logo -->
-                                    <img src="img/logo/logo.png" alt="No se encuentra el enlace de la imagen">
-                                </a>
-                            </div>
-                        </li>
-                        
-                        <!-- Enlaces del menú de navegación -->
-                        <li><a href="index.html">Home</a></li> <!-- Enlace a la página principal -->
-                        <li><a href="#about">About</a></li> <!-- Enlace a la sección "Acerca de" -->
-                        <li><a href="#service">Services</a></li> <!-- Enlace a la sección de servicios -->
-                        <li><a href="#plans">Plans</a></li> <!-- Enlace a la sección de planes -->
-                        <li><a href="#contact">Contact</a></li> <!-- Enlace a la sección de contacto -->
-
-                        <!-- Botón para solicitar una cotización -->
-                        <div class="btn_quote">
-                            <a href="#">Quote</a> <!-- Enlace al formulario o sección de cotización -->
-                        </div>
-                        
-                        <!-- Sección de redes sociales -->
-                        <div class="socialMedia">
-                            <!-- Enlace a la página de Facebook -->
-                            <a href="#" target="_blank">
-                                <!-- Icono de Facebook -->
-                                <img src="img/socialMedia/facebook.png" alt="No se encontró la imagen">
-                            </a>
-
-                            <!-- Enlace a la página de Instagram -->
-                            <a href="#" target="_blank">
-                                <!-- Icono de Instagram -->
-                                <img src="img/socialMedia/instagram.png" alt="No se encontró la imagen">
-                            </a>
-
-                            <!-- Enlace a WhatsApp -->
-                            <a href="#" target="_blank">
-                                <!-- Icono de WhatsApp -->
-                                <img src="img/socialMedia/whatsapp.png" alt="No se encontró la imagen">
-                            </a>
-
-                            <!-- Enlace a X (anteriormente Twitter) -->
-                            <a href="#" target="_blank">
-                                <!-- Icono de X (Twitter) -->
-                                <img src="img/socialMedia/x.png" alt="No se encontró la imagen">
-                            </a>
-                        </div>
-                    </ul> <!-- Fin de la lista de navegación -->
-                </nav> <!-- Fin de la sección de navegación -->
+<!--Header-->
+<header>
+    <!--Header - Container-->
+    <div class="container_header"  >
+        <!--Logo-->
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo/logo.png" alt="No se encontro la ruta de la imagen">
+            </a>
+        </div>
+        <!--End Logo-->
+        <!--Container - Menu-->
+        <div class="menu"> 
+            <!--Menú-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- Enlace a la página principal -->
+                    <li><a href="#about">About</a></li> <!-- Enlace a la sección "Acerca de" -->
+                    <li><a href="#service">Services</a></li> <!-- Enlace a la sección de servicios -->
+                    <li><a href="#plans">Plans</a></li> <!-- Enlace a la sección de planes -->
+                    <li><a href="#contact">Contact</a></li> <!-- Enlace a la sección de contacto -->
+                </ul>
+            </nav>
+            <!--End Menu-->
+            <!--Button-->
+            <a href="#" class="btn_quote">Quote</a>
+            <!--End Button-->
+            <!--Conainer Social Media-->
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/share/153vmdQg4P/" target="_blank">
+                    <img src="img/socialMedia/facebook.png" alt="No se encontro la ruta de la imagen">
+                </a>
+                <a href="https://www.instagram.com/michus_crochet?igsh=d3V0ZHN1Zzcwd21s" target="_blank">
+                    <img src="img/socialMedia/instagram.png" alt="No se encontro la ruta de la imagen">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B573162582703&text&type=phone_number&app_absent=0" target="_blank">
+                    <img src="img/socialMedia/whatsapp.png" alt="No se encontro la ruta de la imagen">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="img/socialMedia/x.png" alt="No se encontro la ruta de la imagen">
+                </a>
             </div>
-        </div> <!-- Fin del contenedor del header -->
-    </header> <!-- Fin del encabezado -->
+            <!--End Conainer Social Media-->
+        </div>
+        <!--End Container - Menu-->
+    </div>
+    <!--End Header - Container-->
+</header>
+<!--End Header-->
 
     <!--main-->
     <main>
@@ -92,7 +80,7 @@
                 <section class="text__cover">
                     <h1>Michu's Crochet</h1>
                     <p>Descubre el encanto de los amigurumis personalizados con Michu's Crochet y deja que nuestras creaciones te acompañen en tus momentos más especiales.</p>
-                    <a href="#" class="btn_text-cover btn_text">Empezar</a>
+                    <a href="video.html" class="btn_text-cover btn_text" target="_blank">Empezar</a>
                 </section>
                 <section class="image__cover">
                     <img src="img/cover/cover2.png" alt="">
@@ -134,11 +122,11 @@
                 <div class="text_about">
                     <h1>"Tejiendo Pasiones: Nuestra historia en el mundo del crochet"</h1>
                     <p>Para nosotros, el crochet es una forma de expresión y conexión. Nuestra misión es compartir la belleza y la calidez que el crochet puede aportar a la vida diaria. Cada proyecto cuenta una historia y refleja nuestra pasión por la creatividad.</p>
-                    <a href="#" class="btn_text">Saber Más</a>
+                    <a href="tabla.html" class="btn_text" target="_blank">Saber Más</a>
                 </div>
                 <div class="image_about">
-                    <img src="img/about/about1.jpg" alt="img no encontrada">
-                    <img src="img/about/about2.jpg" alt="img no encontrada">
+                    <img src="img/about/about1.jpg" class="img-derecha" alt="img no encontrada">
+                    <img src="img/about/about2.jpg" class="img-izquierda" alt="img no encontrada">
                 </div>
             </div>
             </div>
@@ -198,7 +186,7 @@
 
                     <div class="box_projects">
                         <div>
-                            <a href="#" class="imagen-con-texto">
+                            <a href="https://www.instagram.com/michus_crochet?igsh=d3V0ZHN1Zzcwd21s" class="imagen-con-texto" target="_blank">
                                 <img src="img/projects/projects1.jfif" class="img_projects">
                                 <span class="texto-en-imagen">Conoce nuestras colecciones Temáticas </span>
                             </a> 
@@ -206,35 +194,35 @@
                     </div>
 
                     <div class="box_projects">
-                        <a href="#" class="imagen-con-texto">
+                        <a href="https://www.instagram.com/michus_crochet?igsh=d3V0ZHN1Zzcwd21s" class="imagen-con-texto" target="_blank">
                             <img src="img/projects/projects2.jfif" class="img_projects">
                             <span class="texto-en-imagen">Conoce nuestras colecciones de llaveros</span>
                         </a>
                     </div>
 
                     <div class="box_projects">
-                        <a href="#" class="imagen-con-texto">
+                        <a href="https://www.instagram.com/michus_crochet?igsh=d3V0ZHN1Zzcwd21s" class="imagen-con-texto" target="_blank">
                             <img src="img/projects/projects3.jfif" class="img_projects">
                             <span class="texto-en-imagen">Conoce nuestras colecciones para bebés</span>
                         </a>
                     </div>
 
                     <div class="box_projects">
-                        <a href="#" class="imagen-con-texto">
+                        <a href="https://www.instagram.com/michus_crochet?igsh=d3V0ZHN1Zzcwd21s" class="imagen-con-texto" target="_blank">
                             <img src="img/projects/projects4 (2).jfif" class="img_projects">
                             <span class="texto-en-imagen">Conoce nuestras colecciones de animales</span>
                         </a>
                         
                     </div>
                     <div class="box_projects">
-                        <a href="#" class="imagen-con-texto" >
+                        <a href="https://www.instagram.com/michus_crochet?igsh=d3V0ZHN1Zzcwd21s" class="imagen-con-texto" target="_blank">
                             <img src="img/projects/projects5.jfif" class="img_projects">
                             <span class="texto-en-imagen">Conoce nuestras colecciones de peluches</span>
                         </a>
                         
                     </div>
                     <div class="box_projects">
-                        <a href="#" class="imagen-con-texto">
+                        <a href="https://www.instagram.com/michus_crochet?igsh=d3V0ZHN1Zzcwd21s" class="imagen-con-texto" target="_blank">
                             <img src="img/projects/projects6.jfif" class="img_projects">
                             <span class="texto-en-imagen">Conoce nuestras colecciones florales</span>
                         </a>
@@ -254,6 +242,18 @@
                     <div class="box_team">
                         <img src="img/team/team1.jfif">
                         <h2>Michell Pérez Gómez</h2>
+                        <p>Tejedora</p>
+                    </div>
+
+                    <div class="box_team">
+                        <img src="img/team/team2.jpg">
+                        <h2>Juliana Pérez Gómez</h2>
+                        <p>Tejedora</p>
+                    </div>
+
+                    <div class="box_team">
+                        <img src="img/team/team3jpg.jpg">
+                        <h2>María Pérez Gómez</h2>
                         <p>Tejedora</p>
                     </div>
                 </div>
@@ -306,81 +306,53 @@
         <!-- mapa -->
         <div class="map-container">
             
-            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1974.2738252731629!2d-73.36271701145745!3d8.24815668736235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x8e677be03c2a6bf3%3A0x2c74b4dc64973557!2sVelas%20y%20Velones%20F%C3%A1tima!3m2!1d8.2474634!2d-73.3613506!4m3!3m2!1d8.2477351!2d-73.3613987!5e0!3m2!1ses!2sco!4v1728412863863!5m2!1ses!2sco" 
-            width="100%" 
-            height="500" 
-            frameborder="0"
-            style="border: 0;"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-            >
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1974.2738252731629!2d-73.36271701145745!3d8.24815668736235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x8e677be03c2a6bf3%3A0x2c74b4dc64973557!2sVelas%20y%20Velones%20F%C3%A1tima!3m2!1d8.2474634!2d-73.3613506!4m3!3m2!1d8.2477351!2d-73.3613987!5e0!3m2!1ses!2sco!4v1728412863863!5m2!1ses!2sco">
         </iframe>
-            
         </div>
 
-        <!-- agregar video -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="box_footer-primary">
 
-        <div class="media-conatiner">
-            <h2>Reproductor de video</h2>
-            <div class="video_section"> <!-- video de manera local -->
-                
-                <video src="media/video_ejemplo.mp4" class="video" type="video/mp4" controls > </video> <!-- video de manera local -->
+                <div class="box">
+                    <p>Para nosotros, el crochet es una forma de expresión y conexión. Nuestra misión es compartir la belleza y la calidez que el crochet puede aportar a la vida diaria. Cada proyecto cuenta una historia y refleja nuestra pasión por la creatividad.</p>
+                </div>
+                <div class="box">
+                    <div class="nav">
+                        <ul>
+                        <li><a href="index.html">Home</a></li> 
+                        <li><a href="#about">About</a></li> 
+                        <li><a href="#service">Services</a></li> 
+                        <li><a href="#plans">Plans</a></li> 
+                        <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="box">
+                    <div class="contactos">
+                        <a href="https://www.google.com/maps/dir/Velas+y+Velones+F%C3%A1tima,+IV+Centenario,+205057,+Cl.+2%C2%AA+E+%23N26-50,+Oca%C3%B1a,+Norte+de+Santander/Cl.+2%C2%AA+A+%2327,+Oca%C3%B1a,+Norte+de+Santander/@8.247657,-73.361392,18z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8e677b8faffa029d:0x77266d276c9ba087!2m2!1d-73.3613551!2d8.247833!3e2?hl=es&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                            <img src="img/footer/ubicacion (1).png" alt=""><p>Calle 2A #27-09, Ocaña</p></a>
+                        <a href=""><img src="img/footer/telefono.png" alt=""><p>3162582703</p></a>
+                        <a href=""><img src="img/footer/correo.png" alt=""><p>michuscrochet@gmail.com</p></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="socialMediaFooter">
+                        <a href="https://www.facebook.com/share/153vmdQg4P/" target="_blank"><img src="img/socialMedia/facebook.png" alt="No se encontró la imagen"></a>
+                        <a href="https://www.instagram.com/michus_crochet?igsh=d3V0ZHN1Zzcwd21s" target="_blank"><img src="img/socialMedia/instagram.png" alt="No se encontró la imagen"></a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B573162582703&text&type=phone_number&app_absent=0" target="_blank"><img src="img/socialMedia/whatsapp.png" alt="No se encontró la imagen"></a>
+                        <a href="#" target="_blank"><img src="img/socialMedia/x.png" alt="No se encontró la imagen"></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="video_section" >
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/Ilw9C6fstZ0?si=FhsoSuWibgCZLPrI" class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="box_footer-secundary">
+                <small>© 2024 <b>MICHU'S CROCHET</b> | Todos los derechos reservados</small>
             </div>
-            
-
-        </div>
-        <!-- end video -->
-
-        <div class="table-container"> 
-            <h2>Listado de usuarios</h2>
-             <input type="text" placeholder="Buscar...">
-
-             <!-- tabla con paginacion -->
-              <table id="userTable">
-                <thead> <!-- encabezado de tabla -->
-                    <tr class="filas">
-                        <th>ID</th> <!-- filas -->
-                        <th>Nombre</th>
-                        <th>Email</th>
-                        <th>Rol</th>
-                    </tr>
-                    <tbody> <!-- cuerpor de la tabla -->
-                        <tr class="columnas">
-                            <td>1</td> <!-- rellerno de datos, columnas -->
-                            <td>María</td>
-                            <td>maria@gmail.com</td>
-                            <td>Admin</td>
-                        </tr>
-
-                        <tr class="columnas">
-                            <td>2</td>
-                            <td>Juan</td>
-                            <td>juan@gmail.com</td>
-                            <td>Admin</td>
-                        </tr>
-
-                        <tr class="columnas">
-                            <td>3</td>
-                            <td>Carlos</td>
-                            <td>carlos@gmail.com</td>
-                            <td>Admin</td>
-                        </tr>
-
-                        <tr class="columnas">
-                            <td>4</td>
-                            <td>Lucas</td>
-                            <td>lucas@gmail.com</td>
-                            <td>Admin</td>
-                        </tr>
-                    </tbody>
-                </thead>
-              </table>
-        </div>
+        </footer>
     </main>
 </body>
 
